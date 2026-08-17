@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Réservation — SS LINE CAR | Location de voitures à Fès</title>
+<meta name="description" content="Réservez votre voiture en quelques clics chez SS LINE CAR à Fès. Confirmation immédiate sur WhatsApp au 06 61 79 54 57.">
+<link rel="canonical" href="https://www.sslinecar.ma/reservation/index.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SS LINE CAR">
+<meta property="og:title" content="Réservation — SS LINE CAR | Fès">
+<meta property="og:description" content="Réservez votre voiture en quelques clics, confirmation immédiate sur WhatsApp.">
+<meta property="og:image" content="https://www.sslinecar.ma/assets/img/og-cover.jpg">
+<meta property="og:url" content="https://www.sslinecar.ma/reservation/index.html">
+<meta property="og:locale" content="fr_MA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, follow">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2246%22 fill=%22%230d2e2b%22/><text x=%2250%22 y=%2262%22 font-size=%2238%22 text-anchor=%22middle%22 fill=%22%23c9a24b%22 font-family=%22serif%22>SS</text></svg>">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="reservation">
+
+<header id="site-navbar"></header>
+
+<section class="py-16 md:py-20 zellige-bg">
+  <div class="max-w-3xl mx-auto px-5 md:px-8 text-center" data-reveal>
+    <p class="eyebrow justify-center mb-4" data-i18n="reservation.eyebrow">Réservation</p>
+    <h1 class="font-serif text-4xl md:text-5xl text-[color:var(--teal-900)] mb-4" data-i18n="reservation.title">Réservez votre voiture</h1>
+    <p class="text-[color:var(--teal-700)]" data-i18n="reservation.subtitle">Remplissez le formulaire ci-dessous, votre demande sera envoyée directement sur WhatsApp.</p>
+  </div>
+</section>
+
+<section class="pb-24">
+  <div class="max-w-2xl mx-auto px-5 md:px-8" data-reveal>
+    <form id="booking-form" class="bg-white border border-[color:var(--teal-900)]/10 rounded-2xl p-6 md:p-10 shadow-sm space-y-6">
+
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-wide text-[color:var(--teal-700)] mb-2" data-i18n="reservation.name">Nom complet</label>
+          <input required type="text" name="name" data-i18n-placeholder="reservation.namePh" class="w-full rounded-lg border border-[color:var(--teal-900)]/15 px-4 py-3 text-sm bg-[color:var(--cream-50)]">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-wide text-[color:var(--teal-700)] mb-2" data-i18n="reservation.phone">Téléphone</label>
+          <input required type="tel" name="phone" data-i18n-placeholder="reservation.phonePh" class="w-full rounded-lg border border-[color:var(--teal-900)]/15 px-4 py-3 text-sm bg-[color:var(--cream-50)]">
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-xs font-semibold uppercase tracking-wide text-[color:var(--teal-700)] mb-2" data-i18n="reservation.car">Voiture souhaitée</label>
+        <select required name="car" id="car-select" class="w-full rounded-lg border border-[color:var(--teal-900)]/15 px-4 py-3 text-sm bg-[color:var(--cream-50)]">
+        </select>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-wide text-[color:var(--teal-700)] mb-2" data-i18n="reservation.start">Date de départ</label>
+          <input required type="date" name="start" class="w-full rounded-lg border border-[color:var(--teal-900)]/15 px-4 py-3 text-sm bg-[color:var(--cream-50)]">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-wide text-[color:var(--teal-700)] mb-2" data-i18n="reservation.end">Date de retour</label>
+          <input required type="date" name="end" class="w-full rounded-lg border border-[color:var(--teal-900)]/15 px-4 py-3 text-sm bg-[color:var(--cream-50)]">
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-xs font-semibold uppercase tracking-wide text-[color:var(--teal-700)] mb-2" data-i18n="reservation.place">Lieu de prise en charge</label>
+        <input required type="text" name="place" data-i18n-placeholder="reservation.placePh" class="w-full rounded-lg border border-[color:var(--teal-900)]/15 px-4 py-3 text-sm bg-[color:var(--cream-50)]">
+      </div>
+
+      <div>
+        <label class="block text-xs font-semibold uppercase tracking-wide text-[color:var(--teal-700)] mb-2" data-i18n="reservation.message">Message (optionnel)</label>
+        <textarea name="message" rows="3" data-i18n-placeholder="reservation.messagePh" class="w-full rounded-lg border border-[color:var(--teal-900)]/15 px-4 py-3 text-sm bg-[color:var(--cream-50)]"></textarea>
+      </div>
+
+      <p id="form-error" class="hidden text-sm text-red-600" data-i18n="reservation.required">Merci de remplir les champs obligatoires.</p>
+
+      <button type="submit" class="btn-primary w-full justify-center py-4 text-base">
+        <span class="w-4 h-4" id="submit-icon"></span>
+        <span data-i18n="reservation.submit">Confirmer sur WhatsApp</span>
+      </button>
+
+      <p class="text-xs text-center text-[color:var(--teal-600)]" data-i18n="reservation.note">En confirmant, vous serez redirigé vers WhatsApp avec votre demande déjà rédigée.</p>
+    </form>
+  </div>
+</section>
+
+<footer id="site-footer"></footer>
+
+<script src="../assets/app.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    initPage("../");
+    document.getElementById("submit-icon").innerHTML = ICONS.whatsapp;
+
+    const select = document.getElementById("car-select");
+    function fillCarOptions() {
+      const preselect = getUrlParam("car");
+      select.innerHTML = `<option value="" disabled ${preselect ? "" : "selected"}>${t("reservation.carPh")}</option>` +
+        CARS.map(c => `<option value="${c.id}" ${c.id === preselect ? "selected" : ""}>${c.name} — ${c.price} ${t("fleet.perDay")}</option>`).join("");
+    }
+    fillCarOptions();
+
+    const prevOnLangApplied = window.onLangApplied;
+    window.onLangApplied = function () {
+      if (typeof prevOnLangApplied === "function") prevOnLangApplied();
+      const selected = select.value;
+      fillCarOptions();
+      if (selected) select.value = selected;
+    };
+
+    const form = document.getElementById("booking-form");
+    const errorEl = document.getElementById("form-error");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const carId = data.get("car");
+      const car = getCar(carId);
+      const name = (data.get("name") || "").trim();
+      const phone = (data.get("phone") || "").trim();
+      const start = data.get("start");
+      const end = data.get("end");
+      const place = (data.get("place") || "").trim();
+      const message = (data.get("message") || "").trim();
+
+      if (!carId || !name || !phone || !start || !end || !place) {
+        errorEl.classList.remove("hidden");
+        return;
+      }
+      errorEl.classList.add("hidden");
+
+      openWhatsAppBooking({
+        carName: car ? car.name : carId,
+        start, end, place, name, phone, message
+      });
+    });
+  });
+</script>
+</body>
+</html>
